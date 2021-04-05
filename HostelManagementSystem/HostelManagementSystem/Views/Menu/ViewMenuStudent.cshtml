@@ -1,0 +1,112 @@
+﻿@model IEnumerable<HostelManagementSystem.Models.Menu>
+
+@{
+    ViewData["Title"] = "ViewMenuStudent";
+}
+
+<h1>View Menu</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BreakFastItem1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BreakFastItem2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BreakFastItem3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LunchItem1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LunchItem2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LunchItem3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LunchItem4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LunchItem5)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LunchItem6)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DinnerItem1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DinnerItem2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DinnerItem3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DinnerItem4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DinnerItem5)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BreakFastItem1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BreakFastItem2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BreakFastItem3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LunchItem1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LunchItem2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LunchItem3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LunchItem4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LunchItem5)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LunchItem6)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DinnerItem1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DinnerItem2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DinnerItem3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DinnerItem4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DinnerItem5)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

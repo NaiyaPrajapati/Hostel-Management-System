@@ -1,0 +1,104 @@
+﻿@model HostelManagementSystem.Models.Menu
+
+@{
+    ViewData["Title"] = "AddMenu";
+}
+
+<center>
+    <h1>Add Menu</h1>
+</center>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddMenu">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BreakFastItem1" class="control-label"></label>
+                <input asp-for="BreakFastItem1" class="form-control" />
+                <span asp-validation-for="BreakFastItem1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BreakFastItem2" class="control-label"></label>
+                <input asp-for="BreakFastItem2" class="form-control" />
+                <span asp-validation-for="BreakFastItem2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BreakFastItem3" class="control-label"></label>
+                <input asp-for="BreakFastItem3" class="form-control" />
+                <span asp-validation-for="BreakFastItem3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LunchItem1" class="control-label"></label>
+                <input asp-for="LunchItem1" class="form-control" />
+                <span asp-validation-for="LunchItem1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LunchItem2" class="control-label"></label>
+                <input asp-for="LunchItem2" class="form-control" />
+                <span asp-validation-for="LunchItem2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LunchItem3" class="control-label"></label>
+                <input asp-for="LunchItem3" class="form-control" />
+                <span asp-validation-for="LunchItem3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LunchItem4" class="control-label"></label>
+                <input asp-for="LunchItem4" class="form-control" />
+                <span asp-validation-for="LunchItem4" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LunchItem5" class="control-label"></label>
+                <input asp-for="LunchItem5" class="form-control" />
+                <span asp-validation-for="LunchItem5" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LunchItem6" class="control-label"></label>
+                <input asp-for="LunchItem6" class="form-control" />
+                <span asp-validation-for="LunchItem6" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DinnerItem1" class="control-label"></label>
+                <input asp-for="DinnerItem1" class="form-control" />
+                <span asp-validation-for="DinnerItem1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DinnerItem2" class="control-label"></label>
+                <input asp-for="DinnerItem2" class="form-control" />
+                <span asp-validation-for="DinnerItem2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DinnerItem3" class="control-label"></label>
+                <input asp-for="DinnerItem3" class="form-control" />
+                <span asp-validation-for="DinnerItem3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DinnerItem4" class="control-label"></label>
+                <input asp-for="DinnerItem4" class="form-control" />
+                <span asp-validation-for="DinnerItem4" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DinnerItem5" class="control-label"></label>
+                <input asp-for="DinnerItem5" class="form-control" />
+                <span asp-validation-for="DinnerItem5" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="ViewMenu">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
